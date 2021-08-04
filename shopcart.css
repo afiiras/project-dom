@@ -1,0 +1,112 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+
+header {
+  padding: 10px;
+  background-color: rgb(34, 67, 99);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  color: white;
+  transition: 3s;
+}
+:hover .nav {
+  transform: translateX(-30%);
+}
+
+/*------cards----*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #c3ccd1;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.card-block {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 10px 30px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.box {
+  padding: 20px;
+  text-align: center;
+}
+:hover .card-block {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(34, 67, 130));
+}
+.card-title {
+  position: absolute;
+  top: 3%;
+  color: rgb(34, 67, 130);
+  transition: 1.9s;
+}
+:hover .card-title {
+  color: white;
+}
+
+.price {
+  padding: 2px;
+  transition: 2s;
+}
+:hover .price {
+  color: white;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 8px 28px;
+  background: rgb(34, 67, 130);
+  color: #ebf5fc;
+  text-decoration: none;
+  border-radius: 55px;
+  box-shadow: 0 10px 10px black;
+}
+:hover .btn {
+  background: darkgrey;
+}
+.product_quantity {
+  padding: 2px;
+  transition: 2s;
+  font-weight: bold;
+}
+:hover .product_quantity {
+  color: white;
+}
